@@ -1,0 +1,44 @@
+name: 'Request New Feature'
+description: Request a new feature.
+labels: 
+- "Status: Triage"
+- "Suggestion"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Examples of this category include: add void miners, add a naquadah processing line.
+
+      Please note that if you want to change an existing feature, e.g. think something is too OP, you should use the Suggest a Change template instead.
+
+      Search existing issues first; add supporting details to a closed suggestion if you want it reconsidered. Suggestions may not be implemented due to limited interest or community objections.
+- type: input
+  id: discord
+  attributes:
+    label: Your NTNH Discord Username
+    description: Leave empty if you don't have one, but this will make it harder to contact you if we need additional info.
+    placeholder: "Example: Fake"
+- type: input
+  id: version
+  attributes:
+    label: Your Pack Version
+    description: What version of the pack are you playing? If you're using an ancient version maybe first try updating the pack. We add new features all the time, so your feature may already be in the latest version. There are also usually Dev releases inbetween Official releases that may not show up on other platforms.
+    placeholder: "Example: 2.1.1.0"
+  validations:
+    required: true
+- type: textarea
+  id: proposal
+  attributes:
+    label: Your Proposal
+    description: What do you propose? Please describe it briefly in one or two sentence.
+    placeholder: "Example: Add a mega PA."
+  validations:
+    required: true
+- type: textarea
+  id: goal
+  attributes:
+    label: Need, Alternatives, and Expected Improvement
+    description: Why is this feature needed, what similar options already exist in the pack (if any), why are they insufficient, and how would this improve the pack?
+    placeholder: "Example: Existing PAs are too small; a mega PA would simplify large bases and improve the game experience."
+  validations:
+    required: true

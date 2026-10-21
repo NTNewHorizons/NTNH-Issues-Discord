@@ -1,0 +1,54 @@
+name: Suggest a New Mod
+description: Suggest the addition of a new mod.
+labels:
+- "Status: Triage"
+- "Type: Mod Addition"
+- "Suggestion"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Only mods with an open source license are eligible. Search existing issues first; add supporting details to a closed suggestion if you want it reconsidered. Suggestions may not be implemented due to limited interest or community objections.
+- type: input
+  id: discord
+  attributes:
+    label: Your NTNH Discord Username
+    description: Leave empty if you don't have one, but this will make it harder to contact you if we need additional info.
+    placeholder: "Example: Fake"
+- type: input
+  id: version
+  attributes:
+    label: Your Pack Version
+    description: What version of the pack are you playing?
+    placeholder: "Example: 2.1.1.0"
+  validations:
+    required: true
+- type: textarea
+  id: proposal
+  attributes:
+    label: Mod, License, and Your Role
+    description: Give the mod name, a project/source link, and its open source license. Say whether you are its original author or official maintainer for Minecraft 1.7.10.
+    placeholder: "Example: GigaGramFab; source URL; MIT license; I am not the author or maintainer."
+  validations:
+    required: true
+- type: textarea
+  id: features
+  attributes:
+    label: Features and Reasons to Add It
+    description: Describe the main features, why they are needed, and how they would improve the pack. Mention similar features already in the pack and why they are insufficient, or say there are none.
+    placeholder: "Example: New ores and dimensions would enrich exploration beyond the existing options."
+  validations:
+    required: true
+- type: textarea
+  id: test
+  attributes:
+    label: Preliminary Investigation
+    description: Have you tried adding this mod to the pack? Describe results, crashes or conflicts, needed recipe/progression tweaks, and interactions with existing systems. If you have not tested it, say so and note any expected integration work.
+    placeholder: >
+      Example: 
+      The recipe needs to be gregified. 
+      There are no hard conflicts like crashing. 
+      X system works poorly when used with Y feature from an existing mod.
+      The magic side of the pack integrates with the tech progression better.
+  validations:
+    required: true

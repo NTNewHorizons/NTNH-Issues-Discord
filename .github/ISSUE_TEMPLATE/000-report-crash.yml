@@ -1,0 +1,52 @@
+name: Report Crash
+description: "Report a bug that abruptly ends a game session or prevents the start of the game."
+labels:
+- "Crash"
+- "Status: Triage"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Examples of this category include: crashing to desktop, game window disappearing, uncommanded computer shutdown. ~~Please blame your local power grid if your neighbor's computer also shut down due to power outage.~~
+
+      Please note if you merely want a change, e.g. think something is too OP, you should use the Suggest a Change template instead.
+
+      Search existing issues first. If this crash was reported in a closed issue, add your details there so we can investigate and reopen it if confirmed.
+- type: input
+  id: discord
+  attributes:
+    label: Your NTNH Discord Username
+    description: Leave empty if you don't have one, but this will make it harder to contact you if we need additional info. 
+    placeholder: "Example: Fake"
+- type: input
+  id: version
+  attributes:
+    label: Your Pack Version
+    description: What version of the pack are you playing? If you're using an ancient version maybe first try updating the pack. We usually fix hundreds of issues per release, so there is a good chance your problem have been fixed already in the latest version. There are also usually Dev releases inbetween Official releases that may not show up on other platforms.
+    placeholder: "Example: 2.1.1.0"
+  validations:
+    required: true
+- type: textarea
+  id: server
+  attributes:
+    label: Server and Setup
+    description: Include the server name (or SP), whether you play single player, Open To LAN, or on a dedicated server, and the server software if known (Vanilla Forge, Crucible, Thermos, Ultramine, or another MCPC+ fork). Open To LAN means opening a single-player world through the ESC menu. Listing software does not imply support; unknown is fine.
+    placeholder: "Example: Private dedicated server, Crucible; or SP, Open To LAN."
+  validations:
+    required: true
+- type: textarea
+  id: reproduce
+  attributes:
+    label: Actions and Reproducibility
+    description: Describe the steps before the crash and what you expected. Say whether it happens consistently and whether others tried the same steps and also crashed (not tested is fine). Attach screenshots if helpful.
+    placeholder: "Example: Trying to craft Foo. Expect to consume 1 Bar and get 1 Foo."
+  validations:
+    required: true
+- type: textarea
+  id: report
+  attributes:
+    label: Crash Report
+    description: "If no crash report is created, attach `logs/fml-client-latest.log` or `logs/fml-server-latest.log`, depending on if it's a dedicated server crash or a client crash. You can also type in additional info that you consider important."
+    placeholder: "Example: pastebin/something OR submit the file to github by dragging it to this textbox."
+  validations:
+    required: true

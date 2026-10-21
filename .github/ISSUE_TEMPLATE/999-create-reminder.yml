@@ -1,0 +1,51 @@
+name: Create a Reminder
+description: Create a reminder for developer(s).
+labels:
+- "Status: Triage"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Often developers tell you to create a ticket as reminder so they don't keep forgetting things.
+
+      Choose this one ONLY when instructed to do so.
+
+      Use this for a genuine developer commitment, not a casual joke. Even promised work may take a long time or face community objections; explain the expected benefit below.
+- type: input
+  id: discord
+  attributes:
+    label: Your NTNH Discord Username
+    description: What is your NTNH Discord username? We might need to contact you in person if we need additional info
+    placeholder: "Example: Fake"
+- type: input
+  id: version
+  attributes:
+    label: Your Pack Version
+    description: What version of the pack are you playing?
+    placeholder: "Example: 2.1.1.0"
+  validations:
+    required: true
+- type: textarea
+  id: request
+  attributes:
+    label: Request and Developer's Promise
+    description: What did you originally request, and what did the developer promise? Rephrase the commitment in your own words to clarify your expectations, and explain how it would improve the pack.
+    placeholder: "Example: I asked for help with power generation. Glease promised a magic-based generation option, which would give magic-focused bases another way to progress."
+  validations:
+    required: true
+- type: input
+  id: dev
+  attributes:
+    label: Responding developer
+    description: Who responded and instructed you to create this reminder? Mention that developer using the @ symbol.
+    placeholder: "Example: @Glease."
+  validations:
+    required: true
+- type: textarea
+  id: context
+  attributes:
+    label: Context
+    description: Link the Discord messages with your request, the developer's commitment, and their instruction to create this reminder.
+    placeholder: "Example: https://discord.com/channels/1111111111111111/1111111111111111/1111111111111111, https://discord.com/channels/222222222222222/222222222222222/222222222222222"
+  validations:
+    required: true

@@ -1,0 +1,44 @@
+name: Suggest a Change
+description: Suggest a change to an existing feature.
+labels:
+- "Status: Triage"
+- "Suggestion"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Examples of this category include: The One Ring is too OP, remove all small pile of dusts.
+
+      Please note that if you found something game breaking, e.g. a dupe exploit, something voiding your items, or you can't do something that you think you should be able to do, you should use the Report Bug template instead.
+
+      Search existing issues first; add supporting details to a closed suggestion if you want it reconsidered. Suggestions may not be implemented due to limited interest or community objections.
+- type: input
+  id: discord
+  attributes:
+    label: Your NTNH Discord Username
+    description: Leave empty if you don't have one, but this will make it harder to contact you if we need additional info.
+    placeholder: "Example: Fake"
+- type: input
+  id: version
+  attributes:
+    label: Your Pack Version
+    description: What version of the pack are you playing? If you're using an ancient version maybe first try updating the pack. There are usually numerous changes per release, so there is a reasonable chance your idea might have already been implemented already in the latest version. There are also usually Dev releases inbetween Official releases that may not show up on other platforms.
+    placeholder: "Example: 2.1.1.0"
+  validations:
+    required: true
+- type: textarea
+  id: proposal
+  attributes:
+    label: Your Proposal
+    description: What do you propose? Please describe it briefly in one or two sentences.
+    placeholder: "Example: Void miner should require stargate crystals to craft."
+  validations:
+    required: true
+- type: textarea
+  id: goal
+  attributes:
+    label: Reason and Expected Improvement
+    description: What problem does this change address, and how would it make the pack better?
+    placeholder: "Example: Void miners are too OP; requiring stargate crystals would better balance progression and make the pack more enjoyable."
+  validations:
+    required: true
