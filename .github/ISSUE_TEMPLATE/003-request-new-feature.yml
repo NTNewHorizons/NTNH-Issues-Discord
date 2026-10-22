@@ -13,12 +13,6 @@ body:
 
       Search existing issues first; add supporting details to a closed suggestion if you want it reconsidered. Suggestions may not be implemented due to limited interest or community objections.
 - type: input
-  id: discord
-  attributes:
-    label: Your NTNH Discord Username
-    description: Leave empty if you don't have one, but this will make it harder to contact you if we need additional info.
-    placeholder: "Example: Fake"
-- type: input
   id: version
   attributes:
     label: Your Pack Version
@@ -37,8 +31,16 @@ body:
 - type: textarea
   id: goal
   attributes:
-    label: Need, Alternatives, and Expected Improvement
-    description: Why is this feature needed, what similar options already exist in the pack (if any), why are they insufficient, and how would this improve the pack?
-    placeholder: "Example: Existing PAs are too small; a mega PA would simplify large bases and improve the game experience."
+    label: Your Goal
+    description: Why is this feature needed? If something similar already exists in the pack, mention it and explain why it is not good enough.
+    placeholder: "Example: PAs are too small for my tastes."
+  validations:
+    required: true
+- type: textarea
+  id: vision
+  attributes:
+    label: Your Vision
+    description: How do you think your vision would improve the pack?
+    placeholder: "Example: A mega PA would make everyone's base a nicer place and improve the overall quality of game experience."
   validations:
     required: true

@@ -13,12 +13,6 @@ body:
 
       Search existing issues first; add supporting details to a closed suggestion if you want it reconsidered. Suggestions may not be implemented due to limited interest or community objections.
 - type: input
-  id: discord
-  attributes:
-    label: Your NTNH Discord Username
-    description: Leave empty if you don't have one, but this will make it harder to contact you if we need additional info.
-    placeholder: "Example: Fake"
-- type: input
   id: version
   attributes:
     label: Your Pack Version
@@ -37,8 +31,16 @@ body:
 - type: textarea
   id: goal
   attributes:
-    label: Reason and Expected Improvement
-    description: What problem does this change address, and how would it make the pack better?
-    placeholder: "Example: Void miners are too OP; requiring stargate crystals would better balance progression and make the pack more enjoyable."
+    label: Your Goal
+    description: Why is this feature needed?
+    placeholder: "Example: Void miners are too OP."
+  validations:
+    required: true
+- type: textarea
+  id: vision
+  attributes:
+    label: Your Vision
+    description: How do you think your vision would improve the pack?
+    placeholder: "Example: Void miner would be made less OP and help people enjoy the pack."
   validations:
     required: true

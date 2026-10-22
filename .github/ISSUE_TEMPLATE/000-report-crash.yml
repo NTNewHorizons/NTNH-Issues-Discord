@@ -13,12 +13,6 @@ body:
 
       Search existing issues first. If this crash was reported in a closed issue, add your details there so we can investigate and reopen it if confirmed.
 - type: input
-  id: discord
-  attributes:
-    label: Your NTNH Discord Username
-    description: Leave empty if you don't have one, but this will make it harder to contact you if we need additional info. 
-    placeholder: "Example: Fake"
-- type: input
   id: version
   attributes:
     label: Your Pack Version
@@ -26,12 +20,28 @@ body:
     placeholder: "Example: 2.1.1.0"
   validations:
     required: true
-- type: textarea
+- type: input
   id: server
   attributes:
-    label: Server and Setup
-    description: Include the server name (or SP), whether you play single player, Open To LAN, or on a dedicated server, and the server software if known (Vanilla Forge, Crucible, Thermos, Ultramine, or another MCPC+ fork). Open To LAN means opening a single-player world through the ESC menu. Listing software does not imply support; unknown is fine.
-    placeholder: "Example: Private dedicated server, Crucible; or SP, Open To LAN."
+    label: Your Server
+    description: On which server does this happen? Type SP if you are not playing on a dedicated server.
+    placeholder: "Example: Eta, ProsperCraft, private server, SP"
+  validations:
+    required: true
+- type: dropdown
+  id: thermos
+  attributes:
+    label: Type of Server
+    description: The brand of your server. Please note your server brand being listed here does not mean it is supported. Here Open To LAN means you started the world without any dedicated server software and clicked the Open To LAN button in ESC menu.
+    options:
+    - Single Player
+    - Open To LAN
+    - Vanilla Forge
+    - Crucible
+    - Thermos
+    - Ultramine
+    - Other MCPC+ fork
+    - "Don't know"
   validations:
     required: true
 - type: textarea

@@ -12,12 +12,6 @@ body:
 
       Use this for a genuine developer commitment, not a casual joke. Even promised work may take a long time or face community objections; explain the expected benefit below.
 - type: input
-  id: discord
-  attributes:
-    label: Your NTNH Discord Username
-    description: What is your NTNH Discord username? We might need to contact you in person if we need additional info
-    placeholder: "Example: Fake"
-- type: input
   id: version
   attributes:
     label: Your Pack Version
@@ -28,9 +22,17 @@ body:
 - type: textarea
   id: request
   attributes:
-    label: Request and Developer's Promise
-    description: What did you originally request, and what did the developer promise? Rephrase the commitment in your own words to clarify your expectations, and explain how it would improve the pack.
-    placeholder: "Example: I asked for help with power generation. Glease promised a magic-based generation option, which would give magic-focused bases another way to progress."
+    label: Original Request
+    description: What did you request?
+    placeholder: "Example: Struggling with power generation."
+  validations:
+    required: true
+- type: textarea
+  id: promise
+  attributes:
+    label: Developer's Promise
+    description: What did the developer promise? Please rephrase it in your own words so we know your expectation matches what the developer promised, and note how it would improve the pack.
+    placeholder: "Example: Glease promised to add a new power generation option based on magic."
   validations:
     required: true
 - type: input

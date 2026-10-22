@@ -10,12 +10,6 @@ body:
     value: |
       Only mods with an open source license are eligible. Search existing issues first; add supporting details to a closed suggestion if you want it reconsidered. Suggestions may not be implemented due to limited interest or community objections.
 - type: input
-  id: discord
-  attributes:
-    label: Your NTNH Discord Username
-    description: Leave empty if you don't have one, but this will make it harder to contact you if we need additional info.
-    placeholder: "Example: Fake"
-- type: input
   id: version
   attributes:
     label: Your Pack Version
@@ -34,9 +28,17 @@ body:
 - type: textarea
   id: features
   attributes:
-    label: Features and Reasons to Add It
-    description: Describe the main features, why they are needed, and how they would improve the pack. Mention similar features already in the pack and why they are insufficient, or say there are none.
-    placeholder: "Example: New ores and dimensions would enrich exploration beyond the existing options."
+    label: The Mod to Add
+    description: What is the main feature of this mod?
+    placeholder: "Example: More processing lines. More ores. More dimensions."
+  validations:
+    required: true
+- type: textarea
+  id: reason
+  attributes:
+    label: Your Reason
+    description: Why is this mod needed? Mention similar features already in the pack and why they are insufficient, or say there are none.
+    placeholder: "Example: Enrich the exploration experience of the pack!"
   validations:
     required: true
 - type: textarea
