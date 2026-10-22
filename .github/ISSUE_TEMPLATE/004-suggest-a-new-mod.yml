@@ -21,7 +21,7 @@ body:
   id: proposal
   attributes:
     label: Mod, License, and Your Role
-    description: Give the mod name, a project/source link, and its open source license. Say whether you are its original author or official maintainer for Minecraft 1.7.10.
+    description: Mod name, source link, and open source license. Are you its 1.7.10 author or maintainer?
     placeholder: "Example: GigaGramFab; source URL; MIT license; I am not the author or maintainer."
   validations:
     required: true
@@ -37,7 +37,7 @@ body:
   id: reason
   attributes:
     label: Your Reason
-    description: Why is this mod needed? Mention similar features already in the pack and why they are insufficient, or say there are none.
+    description: Why is this mod needed? If similar things exist, say why they are not enough.
     placeholder: "Example: Enrich the exploration experience of the pack!"
   validations:
     required: true
@@ -45,7 +45,7 @@ body:
   id: test
   attributes:
     label: Preliminary Investigation
-    description: Have you tried adding this mod to the pack? Describe results, crashes or conflicts, needed recipe/progression tweaks, and interactions with existing systems. If you have not tested it, say so and note any expected integration work.
+    description: If you tested the mod in the pack, what happened? Say so if you have not tested it.
     placeholder: >
       Example: 
       The recipe needs to be gregified. 

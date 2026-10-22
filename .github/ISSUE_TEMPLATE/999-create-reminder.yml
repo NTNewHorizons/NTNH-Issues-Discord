@@ -31,7 +31,7 @@ body:
   id: promise
   attributes:
     label: Developer's Promise
-    description: What did the developer promise? Please rephrase it in your own words so we know your expectation matches what the developer promised, and note how it would improve the pack.
+    description: What did the developer promise? Rephrase it in your own words and note the benefit.
     placeholder: "Example: Glease promised to add a new power generation option based on magic."
   validations:
     required: true
@@ -39,7 +39,7 @@ body:
   id: dev
   attributes:
     label: Responding developer
-    description: Who responded and instructed you to create this reminder? Mention that developer using the @ symbol.
+    description: Who instructed you to create this? Mention them with @.
     placeholder: "Example: @Glease."
   validations:
     required: true
@@ -47,7 +47,7 @@ body:
   id: context
   attributes:
     label: Context
-    description: Link the Discord messages with your request, the developer's commitment, and their instruction to create this reminder.
+    description: "Discord message links: your request, the promise, and the instruction."
     placeholder: "Example: https://discord.com/channels/1111111111111111/1111111111111111/1111111111111111, https://discord.com/channels/222222222222222/222222222222222/222222222222222"
   validations:
     required: true

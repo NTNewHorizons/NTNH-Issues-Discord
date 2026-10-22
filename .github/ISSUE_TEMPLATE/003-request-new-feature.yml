@@ -12,11 +12,13 @@ body:
       Please note that if you want to change an existing feature, e.g. think something is too OP, you should use the Suggest a Change template instead.
 
       Search existing issues first; add supporting details to a closed suggestion if you want it reconsidered. Suggestions may not be implemented due to limited interest or community objections.
+
+      Check the latest release first; your feature may already be in it.
 - type: input
   id: version
   attributes:
     label: Your Pack Version
-    description: What version of the pack are you playing? If you're using an ancient version maybe first try updating the pack. We add new features all the time, so your feature may already be in the latest version. There are also usually Dev releases inbetween Official releases that may not show up on other platforms.
+    description: The pack version you are playing. If it is old, try updating first.
     placeholder: "Example: 2.1.1.0"
   validations:
     required: true
@@ -32,7 +34,7 @@ body:
   id: goal
   attributes:
     label: Your Goal
-    description: Why is this feature needed? If something similar already exists in the pack, mention it and explain why it is not good enough.
+    description: Why is it needed? If something similar exists, say why it is not enough.
     placeholder: "Example: PAs are too small for my tastes."
   validations:
     required: true

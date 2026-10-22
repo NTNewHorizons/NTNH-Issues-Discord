@@ -12,11 +12,15 @@ body:
       Please note if you merely want a change, e.g. think something is too OP, you should use the Suggest a Change template instead.
 
       Search existing issues first. If this bug was reported in a closed issue, add your details there so we can investigate and reopen it if confirmed. Check the latest official and dev releases in case it is already fixed.
+
+      Open To LAN means opening a single-player world from the ESC menu. Server software is noted for info, not support.
+
+      If the bug needs no reproduction step (e.g. an obvious recipe loophole), just say so in the steps.
 - type: textarea
   id: version
   attributes:
     label: Pack Version and Server Setup
-    description: Include your pack version, server name (or SP), and whether you play single player, Open To LAN, or on a dedicated server. For servers, include the software if known (Vanilla Forge, Crucible, Thermos, Ultramine, or another MCPC+ fork). Open To LAN means opening a single-player world through the ESC menu. Listing software does not imply support; unknown is fine.
+    description: Pack version, server name (or SP), and server software if known. Unknown is fine.
     placeholder: "Example: 2.1.1.0, private dedicated server, Crucible."
   validations:
     required: true
@@ -40,7 +44,7 @@ body:
   id: repro
   attributes:
     label: Steps and Reproducibility
-    description: Give the steps to reproduce. Say whether it happens consistently and whether others tried the steps and saw the same problem. If testing is unnecessary (e.g. an obvious recipe loophole) or has not been done, say so.
+    description: Steps to reproduce. Say if it repeats every time and if others see it too.
     placeholder: "Example: Put 1 Bar in the crafting grid and take Foo. Happens every time; others have not tested it."
   validations:
     required: true

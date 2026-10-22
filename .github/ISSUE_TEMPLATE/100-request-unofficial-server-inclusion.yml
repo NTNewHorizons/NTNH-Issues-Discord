@@ -30,7 +30,7 @@ body:
   id: language
   attributes:
     label: Languages and Server Region
-    description: Which languages should players use, and where is the server hosted? Include the region/country so players can judge likely latency.
+    description: Player languages and where the server is hosted (country/region).
     placeholder: "Example: English; Germany (EU)."
   validations:
     required: true
@@ -38,5 +38,5 @@ body:
   id: info
   attributes:
     label: Additional Info
-    description: Additional info you want to display. Note that if you type too much here it might not fit into the in game window, and we'll trim it or request a change.
+    description: Extra text shown in game; long entries may get trimmed.
     placeholder: "Example: Be a nice person."
